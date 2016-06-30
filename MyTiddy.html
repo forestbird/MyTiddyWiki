@@ -174,6 +174,8 @@ Error message and password prompt
 
 <li>$:/config/DefaultSidebarTab</li>
 
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
 <li>$:/config/OfficialPluginLibrary</li>
 
 <li>$:/config/OriginalTiddlerPaths</li>
@@ -520,11 +522,17 @@ Error message and password prompt
 
 <li>多对一人脸比对接口</li>
 
+<li>获取机器码接口</li>
+
 <li>基本介绍</li>
 
 <li>人脸比对接口</li>
 
+<li>人脸图像跟踪接口</li>
+
 <li>示例程序</li>
+
+<li>授权接口</li>
 
 <li>授权预设值</li>
 
@@ -778,7 +786,7 @@ Error message and password prompt
 
 <li>done</li>
 
-<li>Draft of '基本介绍'</li>
+<li>Draft of '人脸图像跟踪接口'</li>
 
 <li>Draft of 'Customise TiddlyWiki'</li>
 
@@ -1380,9 +1388,9 @@ Error message and password prompt
 
 <li>rboue's plugins for TiddlyWiki</li>
 
-<li>readme</li>
-
 <li>ReadMe</li>
+
+<li>readme</li>
 
 <li>ReadMeBinFolder</li>
 
@@ -2444,11 +2452,14 @@ This is my work in progress version of TW5, incorporating various features and i
 <div created="20160629063010873" creator="Hisign_WeiQiang" modified="20160629063011678" modifier="Hisign_WeiQiang" title="$:/config/AnimationDuration">
 <pre>200</pre>
 </div>
-<div title="$:/config/AutoSave">
-<pre>no</pre>
+<div created="20160630013250275" creator="Hisign_WeiQiang" modified="20160630013250275" modifier="Hisign_WeiQiang" title="$:/config/AutoSave">
+<pre>yes</pre>
 </div>
 <div title="$:/config/DefaultSidebarTab">
 <pre>TableOfContents</pre>
+</div>
+<div created="20160630013259870" creator="Hisign_WeiQiang" modified="20160630013259870" modifier="Hisign_WeiQiang" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permalink</pre>
 </div>
 <div caption="{{$:/language/OfficialPluginLibrary}}" tags="$:/tags/PluginLibrary" title="$:/config/OfficialPluginLibrary" url="http://tiddlywiki.com/library/v5.1.11/index.html">
 <pre>{{$:/language/OfficialPluginLibrary/Hint}}
@@ -18315,10 +18326,10 @@ debug: no
 <div created="20160629062807323" creator="BramChen" modified="20160629062833097" modifier="BramChen" title="$:/SiteTitle">
 <pre>THIDFace SDK API接口说明书</pre>
 </div>
-<div created="20160629064513823" creator="Hisign_WeiQiang" modified="20160629064513823" modifier="Hisign_WeiQiang" title="$:/state/showeditpreview">
+<div created="20160629064513823" creator="Hisign_WeiQiang" modified="20160630010329877" modifier="Hisign_WeiQiang" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20160629070102568" creator="Hisign_WeiQiang" modified="20160629071427135" modifier="Hisign_WeiQiang" title="$:/state/sidebar">
+<div created="20160629070102568" creator="Hisign_WeiQiang" modified="20160630014100028" modifier="Hisign_WeiQiang" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20160629080743191" creator="Hisign_WeiQiang" modified="20160629080755231" modifier="Hisign_WeiQiang" title="$:/state/tab--1498284803">
@@ -18333,7 +18344,7 @@ debug: no
 <div created="20160629080509751" creator="Hisign_WeiQiang" modified="20160629080509751" modifier="Hisign_WeiQiang" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
-<div created="20160629080521926" creator="Hisign_WeiQiang" modified="20160629081119423" modifier="Hisign_WeiQiang" title="$:/state/tab-1749438307">
+<div created="20160629080521926" creator="Hisign_WeiQiang" modified="20160630013319899" modifier="Hisign_WeiQiang" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20160629061247475" creator="BramChen" modified="20160629075834344" modifier="Hisign_WeiQiang" title="$:/state/tab/sidebar--1835078512">
@@ -18342,8 +18353,8 @@ debug: no
 <div created="20160629061944392" creator="BramChen" modified="20160629080615703" modifier="Hisign_WeiQiang" title="$:/state/toc/TableOfContents-教程--81657105">
 <pre>close</pre>
 </div>
-<div created="20160629075213663" creator="Hisign_WeiQiang" modified="20160629075353047" modifier="Hisign_WeiQiang" title="$:/state/toc/TableOfContents-HardInfo--81657105">
-<pre>close</pre>
+<div created="20160629075213663" creator="Hisign_WeiQiang" modified="20160630011919453" modifier="Hisign_WeiQiang" title="$:/state/toc/TableOfContents-HardInfo--81657105">
+<pre>open</pre>
 </div>
 <div created="20160629065301222" creator="Hisign_WeiQiang" modified="20160629081537103" modifier="Hisign_WeiQiang" title="$:/state/toc/TableOfContents-THIDFaceSDK--81657105">
 <pre>open</pre>
@@ -18351,7 +18362,7 @@ debug: no
 <div created="20160629062944747" creator="BramChen" modified="20160629063007975" modifier="Hisign_WeiQian" title="$:/status/UserName">
 <pre>Hisign_WeiQiang</pre>
 </div>
-<div list="人脸比对接口 错误码与对象 基本介绍 $:/AdvancedSearch 多对一人脸比对接口 $:/ControlPanel TiddlyWiki教程" title="$:/StoryList">
+<div list="授权预设值 授权接口 获取机器码接口 人脸图像跟踪接口 多对一人脸比对接口 人脸比对接口 错误码与对象 基本介绍 THIDFaceSDK 示例程序" title="$:/StoryList">
 <pre></pre>
 </div>
 <div title="$:/SVGExampleRadius">
@@ -18798,8 +18809,8 @@ This plugin contains tools to help slice up long texts into individual tiddlers.
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20160629081236069" creator="Hisign_WeiQiang" dependents="" description="Basic theme" modified="20160629081236069" modifier="Hisign_WeiQiang" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" server-url="http://tiddlywiki.com/prerelease/library/v5.1.12/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/http://tiddlywiki.com/prerelease/library/v5.1.12/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.12-prerelease">
 <pre></pre>
 </div>
-<div created="20160629080717724" creator="Hisign_WeiQiang" modified="20160629080817642" modifier="Hisign_WeiQiang" title="$:/temp/search">
-<pre>图</pre>
+<div created="20160629080717724" creator="Hisign_WeiQiang" modified="20160630005509786" modifier="Hisign_WeiQiang" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20160629081237750" creator="Hisign_WeiQiang" modified="20160629081237750" modifier="Hisign_WeiQiang" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/http://127.0.0.1:8080/prerelease/library/v5.1.12/index.html" url="http://127.0.0.1:8080/prerelease/library/v5.1.12/index.html">
 <pre>loaded</pre>
@@ -19024,8 +19035,8 @@ html body, .tc-sidebar-scrollable-backdrop {
 <div title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
 </div>
-<div created="20160629064758237" creator="Hisign_WeiQiang" modified="20160629065256994" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="错误码与对象">
-<pre>错误码
+<div created="20160629064758237" creator="Hisign_WeiQiang" modified="20160630011709214" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="错误码与对象">
+<pre>! ''错误码''
 
 ```j
 //函数调用正常
@@ -19077,7 +19088,7 @@ html body, .tc-sidebar-scrollable-backdrop {
 ```
 
 
-对象
+! ''对象''
 
 ```j
 /**
@@ -19248,11 +19259,38 @@ THIDAPI int THIDCALL THID_DB_Search(int db, unsigned char *probe, THID_SearchCan
 ```
 </pre>
 </div>
-<div created="20160629063026881" creator="Hisign_WeiQiang" modified="20160629063251800" modifier="Hisign_WeiQiang" tags="TableOfContents" title="基本介绍" type="text/vnd.tiddlywiki">
-<pre>人脸识别SDK，版权所有北京海鑫科金高科技股份有限公司(http://www.hisign.com.cn)</pre>
+<div created="20160630011931391" creator="Hisign_WeiQiang" modified="20160630012819327" modifier="Hisign_WeiQiang" tags="HardInfo" title="获取机器码接口">
+<pre>!返回值
+
+```j
+/*函数调用正常*/
+#define HDIF_OK 			0
+```
+!获取版本号
+
+```j
+/*获取机器码API接口版本号*/
+HDIFAPI const char * HDIFCALL HardInfo_Version();
+```
+!产生机器码
+
+```j
+/*产生机器码*/
+HDIFAPI int HDIFCALL HardInfo_Generate(char **s);
+```
+
+!释放资源
+```j
+/*释放资源*/
+HDIFAPI void HDIFCALL HardInfo_Free(char *s);
+```</pre>
 </div>
-<div created="20160629070050154" creator="Hisign_WeiQiang" modified="20160629081729816" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="人脸比对接口">
-<pre>以下返回值见THID_OK等值参见[[错误码与对象]]。
+<div created="20160629063026881" creator="Hisign_WeiQiang" modified="20160630011609173" modifier="Hisign_WeiQiang" tags="TableOfContents" title="基本介绍" type="text/vnd.tiddlywiki">
+<pre>人脸识别SDK，版权所有北京海鑫科金高科技股份有限公司(http://www.hisign.com.cn)
+[img[$:/plugins/tiddlywiki/powered-by-tiddlywiki/powered-by-tiddlywiki.svg]]</pre>
+</div>
+<div created="20160629070050154" creator="Hisign_WeiQiang" modified="20160630014416430" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="人脸比对接口">
+<pre>以下返回值THID_OK等值参见[[错误码与对象]]。
 
 ! 获得版本号
 
@@ -19397,6 +19435,43 @@ THIDAPI void THIDCALL THID_Free(unsigned char *p);
 
 </pre>
 </div>
+<div created="20160630005706922" creator="Hisign_WeiQiang" modified="20160630011126997" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="人脸图像跟踪接口" type="text/vnd.tiddlywiki">
+<pre>以下返回值THID_OK等值参见[[错误码与对象]]。
+
+!创建一个人脸跟踪句柄
+```j
+/* 创建一个人脸跟踪句柄
+* handle:	输出的人脸跟踪句柄
+* width:	跟踪图像的像素宽度
+* height:	跟踪图像的像素高度
+* roi:		跟踪图像内的感兴趣区域，0为整张图像，默认为0
+* 返回值见THID_OK等值
+*/
+THIDAPI int THIDCALL THID_CreateFaceTrackHandle(THID_FaceTrackHandle *handle, int width, int height, const THID_Rect *roi = 0);
+```
+!对视频图像进行人脸跟踪
+```javascript
+/*对视频图像进行人脸跟踪
+* handle:人脸跟踪句柄，同一个句柄只能被同一个线程使用
+* raw:跟踪图像的灰度像素值，长宽为THID_CreateFaceTrackHandle中的参数值
+* detectParam:人脸检测的相关参数，0为默认值
+* useMoveEstimate:是否使用运动估计，如果视频背景画面为静止状态，前景运动的内容较少，则使用运动估计可以提高处理速度；反之，视频背景整体都是动态的或者运动内容较多时，使用运动估计反而会降低处理速度，此时应该关闭此参数。
+* nFrameDetectInterval:人脸检测的间隔视频帧数，跳过几帧检测一次人脸
+* faces:输出的人脸跟踪结果数组指针
+* facenum:	输入值代表faces数组已分配的个数，输出检测到的人脸个数，faces数组的填充个数
+* 返回值见THID_OK等值
+*/
+THIDAPI int THIDCALL THID_FaceTrack(THID_FaceTrackHandle handle, const unsigned char *raw, const THID_DetectParam *detectParam,int useMoveEstimate, int nFrameDetectInterval, THID_FaceTrackData *faces, int *facenum);
+```
+
+!销毁人脸跟踪句柄
+```j
+/**
+* 销毁人脸跟踪句柄，释放资源
+*/
+THIDAPI void THIDCALL THID_DestroyFaceTrackHandle(THID_FaceTrackHandle handle);
+```</pre>
+</div>
 <div created="20160629064328624" creator="Hisign_WeiQiang" modified="20160629064629592" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="示例程序" type="text/vnd.tiddlywiki">
 <pre>示例程序：(忽略异常以及内存清理)
 
@@ -19473,44 +19548,94 @@ unsigned char *extract(const char *file)
 }
 ```</pre>
 </div>
-<div created="20160629072430896" creator="Hisign_WeiQiang" modified="20160629075350993" modifier="Hisign_WeiQiang" tags="HardInfo" title="授权预设值">
+<div created="20160630012850300" creator="Hisign_WeiQiang" modified="20160630013140935" modifier="Hisign_WeiQiang" tags="HardInfo" title="授权接口">
+<pre>!返回值
+
+```j
+#define LicAPI_OK 0
+//netlic address error
+#define LicAPI_ERR_ADDR 1
+#define LicAPI_ERR_NET 2
+#define LicAPI_ERR_DECODE 3
+#define LicAPI_ERR_CHECK 4
+#define LicAPI_ERR_NOPRODUCT 5
+#define LicAPI_ERR_NOSPOT 6
+#define LicAPI_ERR_EXPIRED 7
+#define LicAPI_ERR_EXAUSTED 8
+```
+!创建授权句柄
+
+```j
+/**
+ * 创建授权句柄，lic为授权内容，lic_key为产品授权密钥，phandle为输出句柄
+ */
+int license_api_create(const char *lic, unsigned char lic_key[32], struct license_api_handle **phandle);
+
+```
+!释放授权句柄
+
+```j
+/**
+ * 释放授权句柄，在程序可以脱离授权控制后调用，比如进程结束、动态库卸载
+ */
+void license_api_free(struct license_api_handle *handle);
+
+```
+
+!查询授权内容
+```j
+/**
+ * 查询授权内容，prd是产品id，spot是授权点id，pvalue是授权内容
+ */
+int license_api_query(struct license_api_handle *handle, int prd, int spot, int *pvalue);
+```
+
+!判断日期是否过期
+```j
+/**
+ * 判断日期是否过期的工具方法
+ */
+int license_api_expired(int date);
+```</pre>
+</div>
+<div created="20160629072430896" creator="Hisign_WeiQiang" modified="20160630014124751" modifier="Hisign_WeiQiang" tags="HardInfo" title="授权预设值">
 <pre>在计算授权时，使用下边值确定授权到期日及使用权限等等
 
-|!变量名称 |!值 |!說明 |
-|`LicPrd_FaceSDK` |1|人脸识别SDK |
+| !变量名称 | !值 | !說明 |
+|`LicPrd_FaceSDK` |1|人脸识别SDK|
 |`LicSpot_FaceSDK` |1|time:人脸识别SDK授权到期日期 |
-|`LicSpot_FaceSDK_Detect_A1` |2|/time:人脸检测算法A1授权到期日期 |
+|`LicSpot_FaceSDK_Detect_A1` |2|time:人脸检测算法A1授权到期日期 |
 |`LicSpot_FaceSDK_Detect_A3` |3|time:人脸检测算法A3授权到期日期 |
-|`LicSpot_FaceSDK_Detect_A4` |4| time:人脸检测算法A4授权到期日期 |
-|`LicSpot_FaceSDK_Detect_V4` |5| time:人脸检测算法V4授权到期日期 |
-|`LicSpot_FaceSDK_Locate_CCA` |6| time:人眼定位算法CCA授权到期日期 |
-|`LicSpot_FaceSDK_Locate_HARS` |7| time:人眼定位算法HARS授权到期日期 |
+|`LicSpot_FaceSDK_Detect_A4` |4|time:人脸检测算法A4授权到期日期 |
+|`LicSpot_FaceSDK_Detect_V4` |5|time:人脸检测算法V4授权到期日期 |
+|`LicSpot_FaceSDK_Locate_CCA` |6|time:人眼定位算法CCA授权到期日期 |
+|`LicSpot_FaceSDK_Locate_HARS` |7|time:人眼定位算法HARS授权到期日期 |
 |`LicSpot_FaceSDK_Align_GBR` |8|time:特征定位算法GBR授权到期日期  |
-|`LicSpot_FaceSDK_Align_GBREx` |9| time:特征定位算法GBREx授权到期日期 |
+|`LicSpot_FaceSDK_Align_GBREx` |9|time:特征定位算法GBREx授权到期日期 |
 |`LicSpot_FaceSDK_Align_GBREx7` |10|time:特征定位算法GBREx7授权到期日期  |
 |`LicSpot_FaceSDK_Align_GBREx12` |11|time:特征定位算法GBREx12授权到期日期  |
-|`LicSpot_FaceSDK_recog_V7` |12| 人脸识别算法V7授权到期日期 |
-|`LicSpot_FaceSDK_recog_V731` |13| time:人脸识别算法V731授权到期日期 |
-|`LicSpot_FaceSDKInner` |14| time:人脸识别SDK高级接口授权到期日期 |
-|`LicSpot_FaceSDK_Track` |15| time:人脸跟踪授权到期日期 |
-|`LicSpot_FaceSDK_Attribute_Age` |16| time:人脸属性分类之年龄到期日期 |
+|`LicSpot_FaceSDK_recog_V7` |12|人脸识别算法V7授权到期日期 |
+|`LicSpot_FaceSDK_recog_V731` |13|time:人脸识别算法V731授权到期日期 |
+|`LicSpot_FaceSDKInner` |14|time:人脸识别SDK高级接口授权到期日期 |
+|`LicSpot_FaceSDK_Track` |15|time:人脸跟踪授权到期日期 |
+|`LicSpot_FaceSDK_Attribute_Age` |16|time:人脸属性分类之年龄到期日期 |
 |`LicSpot_FaceSDK_Attribute_Gender` |17|time:人脸属性分类之性别到期日期  |
-|`LicSpot_FaceSDK_Attribute_Glasses` |18| time:人脸属性分类之眼镜到期日期 |
-|`LicSpot_FaceSDK_Attribute_Expression` |19| time:人脸属性分类之表情到期日期 |
-|`LicSpot_FaceSDK_Attribute_Ethnic` |20| time:人脸属性分类之民族到期日期 |
-|`LicSpot_FaceSDK_TrackNum` |21| num:人脸识别跟踪路数限制 |
+|`LicSpot_FaceSDK_Attribute_Glasses` |18|time:人脸属性分类之眼镜到期日期 |
+|`LicSpot_FaceSDK_Attribute_Expression` |19|time:人脸属性分类之表情到期日期 |
+|`LicSpot_FaceSDK_Attribute_Ethnic` |20|time:人脸属性分类之民族到期日期 |
+|`LicSpot_FaceSDK_TrackNum` |21|num:人脸识别跟踪路数限制 |
 |`LicSpot_FaceSDK_DataNum` |22|num:人脸1对多识别库容限制  |
-|`LicPrd_NetLic` |2| 网络授权服务器|
-|`LicSpot_NetLic` |1| time:网络授权服务器到期日期 |
+|`LicPrd_NetLic` |2|网络授权服务器|
+|`LicSpot_NetLic` |1|time:网络授权服务器到期日期 |
 |`LicSpot_NetLic_Num` |2|num:网络授权的使用数量  |
-|`LicPrd_HBIE` |3| HBIE比对引擎 |
-|`LicSpot_HBIE` |1| time:比对引擎使用到期日期 |
-|`LicSpot_HBIE_DataNum` |2| num:比对引擎数据库容 |
+|`LicPrd_HBIE` |3|HBIE比对引擎 |
+|`LicSpot_HBIE` |1|time:比对引擎使用到期日期 |
+|`LicSpot_HBIE_DataNum` |2|num:比对引擎数据库容 |
 |`LicSpot_HBIE_MatcherNum` |3|num:比对引擎比对器数量  |
 |`LicPrd_FpMatckSDK` |4|指掌纹识别SDK  |
 |`LicSpot_FpMatchSDK` |1|time:指掌纹识别SDK授权到期日期  |
-|`LicPrd_ID_Fpr` |5| 证件指纹SDK |
-|`LicSpot_ID_Fpr` |1| time:证件指纹ＳＤＫ授权到期日期 |</pre>
+|`LicPrd_ID_Fpr` |5|证件指纹SDK |
+|`LicSpot_ID_Fpr` |1|time:证件指纹SDK授权到期日期 |</pre>
 </div>
 <div caption="初學者指南" created="20150325170720682" modified="20150927233557143" tags="HelloThere" title="A Gentle Guide to TiddlyWiki" type="text/vnd.tiddlywiki">
 <pre>TiddlyWiki 是一個令人難以置信的靈活和多元化的工具，以與大多數軟體不同的方式構思與建構。這使其難以理解，直到它點擊的那一刻，並成為您大腦的一個無縫延伸。
@@ -21514,9 +21639,42 @@ datepicker is a TiddlyWiki plugin that allows you to use a widget much like Edit
 <div caption="完成" color="#2dbe37" icon="$:/core/images/done-button" modified="20130705102700000" title="done">
 <pre></pre>
 </div>
-<div created="20160629063026881" creator="Hisign_WeiQiang" draft.of="基本介绍" draft.title="基本介绍" modified="20160629080443947" modifier="Hisign_WeiQiang" tags="TableOfContents" title="Draft of '基本介绍'" type="text/vnd.tiddlywiki">
-<pre>人脸识别SDK，版权所有北京海鑫科金高科技股份有限公司(http://www.hisign.com.cn)
-</pre>
+<div created="20160630005706922" creator="Hisign_WeiQiang" draft.of="人脸图像跟踪接口" draft.title="人脸图像跟踪接口" modified="20160630012003675" modifier="Hisign_WeiQiang" tags="THIDFaceSDK" title="Draft of '人脸图像跟踪接口'" type="text/vnd.tiddlywiki">
+<pre>以下返回值THID_OK等值参见[[错误码与对象]]。
+
+!创建一个人脸跟踪句柄
+```j
+/* 创建一个人脸跟踪句柄
+* handle:	输出的人脸跟踪句柄
+* width:	跟踪图像的像素宽度
+* height:	跟踪图像的像素高度
+* roi:		跟踪图像内的感兴趣区域，0为整张图像，默认为0
+* 返回值见THID_OK等值
+*/
+THIDAPI int THIDCALL THID_CreateFaceTrackHandle(THID_FaceTrackHandle *handle, int width, int height, const THID_Rect *roi = 0);
+```
+!对视频图像进行人脸跟踪
+```javascript
+/*对视频图像进行人脸跟踪
+* handle:人脸跟踪句柄，同一个句柄只能被同一个线程使用
+* raw:跟踪图像的灰度像素值，长宽为THID_CreateFaceTrackHandle中的参数值
+* detectParam:人脸检测的相关参数，0为默认值
+* useMoveEstimate:是否使用运动估计，如果视频背景画面为静止状态，前景运动的内容较少，则使用运动估计可以提高处理速度；反之，视频背景整体都是动态的或者运动内容较多时，使用运动估计反而会降低处理速度，此时应该关闭此参数。
+* nFrameDetectInterval:人脸检测的间隔视频帧数，跳过几帧检测一次人脸
+* faces:输出的人脸跟踪结果数组指针
+* facenum:	输入值代表faces数组已分配的个数，输出检测到的人脸个数，faces数组的填充个数
+* 返回值见THID_OK等值
+*/
+THIDAPI int THIDCALL THID_FaceTrack(THID_FaceTrackHandle handle, const unsigned char *raw, const THID_DetectParam *detectParam,int useMoveEstimate, int nFrameDetectInterval, THID_FaceTrackData *faces, int *facenum);
+```
+
+!销毁人脸跟踪句柄
+```j
+/**
+* 销毁人脸跟踪句柄，释放资源
+*/
+THIDAPI void THIDCALL THID_DestroyFaceTrackHandle(THID_FaceTrackHandle handle);
+```</pre>
 </div>
 <div caption="客製化" created="20140904101600000" creator="BramChen" draft.of="Customise TiddlyWiki" draft.title="Customise TiddlyWiki" list="[[Initial customisation]]" modified="20160629062435902" modifier="BramChen" tags="教程" title="Draft of 'Customise TiddlyWiki'">
 <pre>有關客製化 TiddlyWiki 的資訊
@@ -26153,9 +26311,6 @@ After using them for personal projects I'm glad to share with TiddlyWiki communi
 &lt;&lt;&lt;
 </pre>
 </div>
-<div caption="說明" title="readme">
-<pre></pre>
-</div>
 <div created="20131129094758194" modified="20140920135213536" title="ReadMe" type="text/vnd.tiddlywiki">
 <pre>\define tv-wikilink-template() http://tiddlywiki.com/static/$uri_doubleencoded$.html
 
@@ -26189,6 +26344,9 @@ TiddlyWiki 是 JavaScript 寫成的一個完整互動式維基。它可以用於
 
 &lt;/$importvariables&gt;
 </pre>
+</div>
+<div caption="說明" title="readme">
+<pre></pre>
 </div>
 <div created="20140908150853120" modified="20140908150853120" title="ReadMeBinFolder" type="text/vnd.tiddlywiki">
 <pre>\define tv-wikilink-template() http://tiddlywiki.com/static/$uri_doubleencoded$.html
